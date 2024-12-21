@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:controller="com.patrick.controllers.DemandeViewController"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="20"
+      stylesheets="@../../styles/doetlist.css"
+      styleClass="container">
+    <GridPane alignment="TOP_LEFT" hgap="15" vgap="15" styleClass="grid-pane-left">
+        <Label text="Entrer votre numero" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="form-label"/>
+        <TextField fx:id="telephoneField" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="input-field"/>
+
+        <Label text="Articles:" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="form-label"/>
+        <TableView fx:id="articlesTable" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="table-view">
+            <columns>
+                <TableColumn text="Libelle" fx:id="libelleField"/>
+                <TableColumn text="Prix" fx:id="prixField"/>
+                <TableColumn text="Quantité en Stock" fx:id="qteStockField"/>
+            </columns>
+        </TableView>
+
+        <Label text="Quantité:" GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="form-label"/>
+        <TextField fx:id="quantityField" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="input-field"/>
+
+        <Button text="Add Article" onAction="#onAddArticle" GridPane.columnIndex="0" GridPane.rowIndex="4" styleClass="primary-button"/>
+        <Button text="Save Request" onAction="#onSaveRequest" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="secondary-button"/>
+    </GridPane>
+
+    <GridPane alignment="TOP_RIGHT" hgap="15" vgap="15" styleClass="grid-pane-right">
+        <Label text="Filter by Role:" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="form-label"/>
+        <ComboBox fx:id="etatComboBox" GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#filterbyetat" styleClass="input-field"/>
+        <TableView fx:id="demandesTable" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="table-view">
+            <columns>
+                <TableColumn text="Date" fx:id="dateColumn"/>
+                <TableColumn text="Montant" fx:id="montantColumn"/>
+                <TableColumn text="État" fx:id="etatColumn"/>
+                <TableColumn text="Détails" fx:id="detailColumn"/>
+            </columns>
+        </TableView>
+    </GridPane>
+</HBox>

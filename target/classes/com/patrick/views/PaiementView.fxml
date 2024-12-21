@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane fx:controller="com.patrick.controllers.PaiementViewController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="10" vgap="10" stylesheets="@../styles/paiement.css">
+    <Label text="Paiement pour Dette" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    
+    <Label text="Select Debt ID:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="debtIdField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+    <Label text="Amount:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="amountField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Button text="Process Payment" onAction="#onProcessPayment" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+</GridPane>

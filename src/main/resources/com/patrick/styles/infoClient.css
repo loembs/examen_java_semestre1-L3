@@ -1,0 +1,85 @@
+
+.main-container {
+    -fx-background-color: #f5faff;
+    -fx-padding: 20;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.form-container {
+    -fx-background-color: #e3eafc;
+    -fx-padding: 20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: #3b5998;
+    -fx-border-width: 2;
+    -fx-spacing: 15;
+}
+
+.input-hbox {
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+}
+
+.form-label {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3b5998;
+}
+
+.input-field {
+    -fx-pref-width: 250;
+    -fx-padding: 5;
+    -fx-border-color: #3b5998;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.menu-label {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3b5998;
+}
+
+.info-label {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3b5998;
+}
+
+.info-value {
+    -fx-font-size: 14;
+    -fx-text-fill: #3b5998;
+}
+
+.clients-table {
+    -fx-border-color: #3b5998;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.clients-table .column-header {
+    -fx-background-color: #3b5998;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.search-button {
+    -fx-background-color: #425ad2; /* Bleu roi */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(66, 90, 210, 0.3), 10, 0.5, 0, 0);
+}
+
+.search-button:hover {
+    -fx-background-color: #6372e5;
+}
+
+.search-button:pressed {
+    -fx-background-color: #293bbf; 
+}

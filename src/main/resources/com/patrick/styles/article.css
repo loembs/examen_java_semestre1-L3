@@ -1,0 +1,89 @@
+VBox {
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-background-color: #f7f9fc;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.header-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #425ad2;
+    -fx-padding: 10px 0;
+    -fx-alignment: center;
+}
+
+.form-container {
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+}
+
+.input-hbox {
+    -fx-alignment: center-left;
+}
+
+.form-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #425ad2;
+}
+
+.input-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d8ff;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+    -fx-pref-width: 200px;
+}
+
+.articles-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d8ff;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+}
+
+.button-container {
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+    -fx-padding: 20px 0;
+}
+
+.main-button {
+    -fx-background-color: #425ad2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 20px;
+}
+
+.main-button:hover {
+    -fx-background-color: #6372e5;
+}
+
+.main-button:pressed {
+    -fx-background-color: #293bbf;
+}
+
+.secondary-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #425ad2;
+    -fx-text-fill: #425ad2;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 8px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #f0f4ff;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: #d0d8ff;
+}

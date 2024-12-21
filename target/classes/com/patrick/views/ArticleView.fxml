@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.patrick.controllers.ArticleViewController" stylesheets="@../styles/article.css">
+    <Label text="Ajouter un Article" styleClass="header-label"/>
+
+    <VBox spacing="15" styleClass="form-container">
+        <HBox spacing="15" styleClass="input-hbox">
+            <Label text="Libelle:" styleClass="form-label"/>
+            <TextField fx:id="mylibelleField" promptText="Nom de l'article" styleClass="input-field"/>
+        </HBox>
+
+        <HBox spacing="15" styleClass="input-hbox">
+            <Label text="Prix:" styleClass="form-label"/>
+            <TextField fx:id="prixField" promptText="Prix en CFA" styleClass="input-field"/>
+        </HBox>
+
+        <HBox spacing="15" styleClass="input-hbox">
+            <Label text="Quantité en stock:" styleClass="form-label"/>
+            <TextField fx:id="qteStockField" promptText="Quantité disponible" styleClass="input-field"/>
+        </HBox>
+
+        <TableView fx:id="articlesTable" prefWidth="500" prefHeight="300" styleClass="articles-table">
+            <columns>
+                <TableColumn fx:id="libelleColumn" text="Libelle"/>
+                <TableColumn fx:id="prixColumn" text="Prix"/>
+                <TableColumn fx:id="qteStockColumn" text="Quantité"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+    <HBox spacing="15" alignment="center" styleClass="button-container">
+        <Button onAction="#handleSaveArticle" text="Enregistrer" styleClass="main-button" graphicTextGap="10">
+                 <ImageView fx:id="saveIcon" fitHeight="16" fitWidth="16">
+                     <Image url="@../icons/save.png"/>
+                </ImageView>
+        </Button>
+
+        <Button onAction="#handleUpdateQte" text="Mettre à jour la Quantité" styleClass="secondary-button" graphicTextGap="10">
+                <ImageView fx:id="updateIcon" fitHeight="16" fitWidth="16">
+                    <Image url="@../icons/update.png"/>
+                </ImageView>
+        </Button>
+    </HBox>
+</VBox>

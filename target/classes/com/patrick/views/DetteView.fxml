@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="com.patrick.controllers.DetteViewController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="15" vgap="15"
+          stylesheets="@../styles/dette.css" >
+    <Label text="Nouvelle Dette" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="header-label" GridPane.columnSpan="2"/>
+
+    <Label text="Client Phone Number:" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="form-label"/>
+    <TextField fx:id="phoneNumberField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Articles:" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="form-label"/>
+    <TableView fx:id="articlesTable" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="500" prefHeight="250">
+        <columns>
+            <TableColumn text="Libelle" fx:id="libelleField"/>
+            <TableColumn text="Prix" fx:id="prixField"/>
+            <TableColumn text="Quantité en Stock" fx:id="qteStockField"/>
+        </columns>
+    </TableView>
+
+    <Label text="Quantité:" GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="form-label"/>
+    <TextField fx:id="quantityField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Button text="Add Article" onAction="#onAddArticle" GridPane.columnIndex="0" GridPane.rowIndex="4" styleClass="primary-button"/>
+    <Button text="Save Debt" onAction="#onSaveDebt" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="secondary-button"/>
+</GridPane>

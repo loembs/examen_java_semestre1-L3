@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="com.patrick.controllers.DetteViewTwoController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="10" vgap="10" stylesheets="@../styles/dette.css">
+    <Label text="Liste de dettes" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <Button text="Archives" onAction="#showArchivedDettes" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+     <TableView fx:id="archivedDettesTable" GridPane.columnIndex="3" GridPane.rowIndex="3" prefWidth="400" prefHeight="300" visible="false">
+        <columns>
+            <TableColumn text="Date" fx:id="archivedDate"/>
+            <TableColumn text="Montant" fx:id="archivedMontant"/>
+            <TableColumn text="Montant versé" fx:id="archivedMontantVerser"/>
+            <TableColumn text="État" fx:id="archivedEtat"/>
+        </columns>
+    </TableView>
+    <Button fx:id="showActiveDettesButton" text="Afficher les dettes actives" onAction="#showActiveDettes"
+        visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <TableView fx:id="dettesTable" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="400" prefHeight="300">
+        <columns>
+            <TableColumn text="date" fx:id="date"/>
+            <TableColumn text="Montant" fx:id="montant"/>
+            <TableColumn text="Montant verser" fx:id="montantVerser"/>
+            <TableColumn text="Etat" fx:id="etat"/>
+        </columns>
+    </TableView>
+    <Button text="Archiver" onAction="#archiveDette" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+</GridPane>

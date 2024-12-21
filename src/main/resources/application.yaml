@@ -1,0 +1,4 @@
+persistence: "MYSQL"
+repository:
+    client: com.natsi.repositories.bd.ClientRepositoryBD
+    user: com.natsi.repositories.bd.UserRepositoryBD

@@ -1,0 +1,50 @@
+/* Style pour BorderPane avec fond bleu */
+BorderPane {
+    -fx-background-color: #fff; /* Fond bleu doux */
+}
+
+/* Style pour le VBox */
+VBox {
+    -fx-background-color: #0c42f5;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+    -fx-border-color: #d0d8ff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.3, 0, 4);
+}
+
+/* Style pour le titre */
+.title {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-alignment: center;
+}
+
+/* Style des labels de menu */
+.menuLabel {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold; /* Met le texte en gras */
+    -fx-text-fill: #fff;
+    -fx-padding: 8px 0;
+    -fx-cursor: hand;
+    -fx-background-radius: 8px;
+    -fx-alignment: center;
+    -fx-border-radius: 8px;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 2, 0.5, 0, 1);
+}
+
+.menuLabel:hover {
+    -fx-background-color: #d9e2ff;
+}
+
+.menuLabel:pressed {
+    -fx-background-color: #c3d1ff;
+}
+ImageView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0.0, 0, 1);
+}

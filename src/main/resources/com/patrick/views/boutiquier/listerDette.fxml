@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="com.patrick.controllers.ListerDetteOptionController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="10" vgap="10" style="-fx-padding: 20;" stylesheets="@../../styles/listerDette.css">
+    <Label text="Liste de dettes" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TableView fx:id="detteTableView"  styleClass="table-view"  GridPane.columnIndex="1" GridPane.rowIndex="1"  prefWidth="800" 
+               prefHeight="400"
+               GridPane.halignment="CENTER" 
+               GridPane.valignment="CENTER" visible="true">
+        <columns>
+            <TableColumn text="Date" fx:id="date"/>
+            <TableColumn text="Montant" fx:id="montant"/>
+            <TableColumn text="Montant versé" fx:id="montantVerser"/>
+            <TableColumn text="État" fx:id="etat"/>
+            <TableColumn text="Détails" fx:id="detailColumn"/>   
+        </columns>
+    </TableView>
+    <TableView fx:id="articlesTable" visible="false"  prefWidth="500" 
+               prefHeight="300" 
+               GridPane.halignment="CENTER" 
+               GridPane.valignment="CENTER"  GridPane.columnIndex="1" styleClass="articles-table">
+            <columns>
+                <TableColumn fx:id="libelleColumn" text="Libelle"/>
+                <TableColumn fx:id="prixColumn" text="Prix"/>
+                <TableColumn fx:id="qteStockColumn" text="Quantité"/>
+            </columns>
+    </TableView>
+</GridPane>

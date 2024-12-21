@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+
+<HBox prefHeight="435.0" prefWidth="600.0" stylesheets="@../styles/login.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.patrick.controllers.LoginController">
+    <VBox alignment="CENTER" prefWidth="300.0" spacing="20" styleClass="left-panel">
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <ImageView fx:id="logo" fitWidth="50" fitHeight="50">
+                <Image url="@../icons/debt.png"/>
+            </ImageView>
+            <Label styleClass="title-label" text="Gestion Dette" textFill="#ffffff">
+                <font>
+                    <Font size="31.0" />
+                </font>
+            </Label>
+        </HBox>
+    </VBox>
+    
+    <VBox alignment="CENTER" prefWidth="300.0" spacing="15" styleClass="login-panel">
+        <Label styleClass="login-title" text="Connexion">
+            <font>
+                <Font name="Bell MT" size="17.0" />
+            </font>
+        </Label>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <ImageView fx:id="loginIcon" fitWidth="20" fitHeight="20">
+                <Image url="@../icons/user_icon.png"/> 
+            </ImageView>
+            <TextField fx:id="loginField" promptText="Login" styleClass="text-field" />
+        </HBox>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <ImageView fx:id="passwordIcon" fitWidth="20" fitHeight="20">
+                <Image url="@../icons/lock_icon.png"/>
+            </ImageView>
+            <PasswordField fx:id="passwordField" promptText="Mot de passe" styleClass="text-field" />
+        </HBox>
+
+        <Button fx:id="loginButton" onAction="#handleLogin" styleClass="login-button" text="Se connecter" />
+    </VBox>
+</HBox>

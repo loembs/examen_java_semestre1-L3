@@ -1,0 +1,145 @@
+VBox{
+    -fx-padding: 30px;
+    -fx-spacing: 25px;
+    -fx-background-color: #F8F9FA;
+    -fx-border-color: #E9ECEF;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
+    -fx-alignment: center;
+}
+
+
+Label {
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #212529;
+    -fx-opacity: 0.9;
+}
+.scroll-pane {
+    -fx-background-color: #F8F9FA;
+    -fx-border-color: #E9ECEF;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+Button {
+    -fx-background-color: #0D6EFD;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(13, 110, 253, 0.3), 8, 0.5, 0, 2);
+}
+
+Button:hover {
+    -fx-background-color: #0A58CA;
+}
+
+Button:pressed {
+    -fx-background-color: #084298;
+}
+
+TextField, PasswordField, ComboBox {
+    -fx-background-color: white;
+    -fx-border-color: #CED4DA;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+    -fx-pref-width: 250px;
+}
+
+TextField:focused, PasswordField:focused, ComboBox:focused {
+    -fx-border-color: #0D6EFD;
+    -fx-background-color: #FFFFFF;
+}
+
+GridPane {
+    -fx-padding: 20px;
+    -fx-hgap: 20px;
+    -fx-vgap: 20px;
+    -fx-min-width: 400px; 
+    -fx-max-width: 600px;
+    -fx-background-color: white;
+    -fx-border-color: #E9ECEF;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+}
+
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0D6EFD;
+    -fx-padding-bottom: 20px;
+    -fx-text-alignment: center;
+}
+
+.secondary-button {
+    -fx-background-color: #E9ECEF;
+    -fx-text-fill: #212529;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 20px;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #DEE2E6;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: #CED4DA;
+}
+
+#error-label {
+    -fx-text-fill: #DC3545;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+
+.table-view {
+    -fx-pref-width: 100%;
+    -fx-background-color: white;
+    -fx-border-color: #E9ECEF;
+    -fx-border-radius: 10px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 6, 0, 0, 3);
+}
+
+.table-view .column-header {
+    -fx-background-color: #F1F3F5;
+    -fx-font-weight: bold;
+    -fx-text-fill: #212529;
+    -fx-padding: 10px;
+}
+
+.table-view .cell {
+    -fx-padding: 10px;
+}
+.primary-button {
+    -fx-background-color: #198754;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 15px;
+}
+
+.primary-button:hover {
+    -fx-background-color: #157347;
+}

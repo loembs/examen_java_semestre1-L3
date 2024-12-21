@@ -1,0 +1,60 @@
+.root {
+    -fx-background-color: #f8f9fa; 
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-padding: 20px;
+}
+
+.grid-pane {
+    -fx-alignment: center;
+    -fx-padding: 10px 0 0 0;
+    -fx-hgap: 20px;
+    -fx-vgap: 20px;
+}
+
+.label {
+    -fx-text-fill: #212529; 
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+
+.table-view, .articles-table {
+    -fx-background-color: #ffffff; 
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #e9ecef, #dee2e6); /* Doux dégradé */
+    -fx-padding: 8px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.table-view .cell, .articles-table .cell {
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-text-fill: #495057;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #007bff, #0056b3); /* Bleu moderne */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0069d9;
+}
+
+.centered-content {
+    -fx-alignment: center; 
+}

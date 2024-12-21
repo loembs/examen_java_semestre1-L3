@@ -1,0 +1,109 @@
+
+VBox {
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-background-color: #f0f4ff;
+    -fx-border-color: #d0d8ff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+
+Label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #425ad2;
+}
+
+TextField {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d8ff;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 13px;
+}
+
+Button {
+    -fx-background-color: #425ad2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(66,90,210,0.3), 10, 0.5, 0, 0);
+}
+
+Button:hover {
+    -fx-background-color: #6372e5;
+}
+
+Button:pressed {
+    -fx-background-color: #293bbf;
+}
+
+HBox {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+.form-container {
+    -fx-spacing: 15px;
+    -fx-max-width: 600px;
+    -fx-pref-width: 100%;
+}
+
+.input-hbox {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+.form-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #425ad2;
+    -fx-pref-width: 100px;
+}
+
+.input-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d8ff;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+    -fx-pref-width: 200px;
+}
+
+.clients-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d8ff;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 400px;
+}
+
+.clients-table .table-column {
+    -fx-font-size: 13px;
+    -fx-padding: 8px;
+}
+.search-button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(76,175,80,0.3), 10, 0.5, 0, 0);
+}
+
+.search-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.search-button:pressed {
+    -fx-background-color: #2e7d32;
+}

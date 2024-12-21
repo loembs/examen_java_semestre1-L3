@@ -1,0 +1,81 @@
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+}
+
+.form-container {
+    -fx-padding: 20px;
+    -fx-border-color: #003366;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #f5f5f5;
+}
+
+.form-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+}
+
+.input-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #003366;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-pref-height: 30px;
+}
+.main-button {
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.main-button:hover {
+    -fx-background-color: #005bb5;
+}
+
+.search-button {
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 15px;
+    -fx-cursor: hand;
+}
+
+.search-button:hover {
+    -fx-background-color: #005bb5;
+}
+
+.large-gridpane {
+    -fx-padding: 20px;
+    -fx-border-color: #003366;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #e6f0ff;
+}
+
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+}
+
+.message-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: red;
+}
